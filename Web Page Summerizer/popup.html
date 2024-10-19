@@ -1,0 +1,171 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page Summarizer and Translator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Summary</h1>
+  <textarea id="summary" readonly></textarea>
+  <button id="regenerate">Regenerate Summary</button>
+  <label for="summaryFormat">Format:</label>
+  <select id="summaryFormat">
+    <option value="paragraph">Paragraph</option>
+    <option value="bullet">Bullet Points</option>
+  </select>
+  <button id="copy">Copy</button>
+  <button id="speak">Text to Speech</button>
+
+  <div>
+    <label for="translateTo">Translate to:</label>
+    <select id="translateTo">
+      <option value="en-GB">English</option>
+      <option value="hi-IN">Hindi</option>
+      <option value="pa-IN">Punjabi</option>
+      <option value="gu-IN">Gujarati</option>
+      <option value="bn-IN">Bengali</option>
+    </select>
+    <button id="translate">Translate</button>
+  </div>
+
+  
+  <div>
+    <label for="volume">Volume: <span id="label-v">1</span></label>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="rate">Rate: <span id="label-r">1</span></label>
+    <input type="range" id="rate" min="0.1" max="10" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="pitch">Pitch: <span id="label-p">1</span></label>
+    <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="voices">Voice:</label>
+    <select id="voices"></select>
+  </div>
+  <button id="start">Start</button>
+  <button id="resume">Resume</button>
+  <button id="pause">Pause</button>
+  <button id="cancel">Cancel</button>
+
+  <script src="popup.js"></script>
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Page Summarizer and Translator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Summary</h1>
+  <textarea id="summary" readonly></textarea>
+  <button id="regenerate">Regenerate Summary</button>
+  <label for="summaryFormat">Format:</label>
+  <select id="summaryFormat">
+    <option value="paragraph">Paragraph</option>
+    <option value="bullet">Bullet Points</option>
+  </select>
+  <button id="copy">Copy</button>
+  <button id="speak">Text to Speech</button>
+
+  <div>
+    <label for="translateTo">Translate to:</label>
+    <select id="translateTo">
+      <option value="en-GB">English</option>
+      <option value="hi-IN">Hindi</option>
+      <option value="pa-IN">Punjabi</option>
+      <option value="gu-IN">Gujarati</option>
+      <option value="bn-IN">Bengali</option>
+    </select>
+    <button id="translate">Translate</button>
+  </div>
+
+  <div>
+    <label for="volume">Volume: <span id="label-v">1</span></label>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="rate">Rate: <span id="label-r">1</span></label>
+    <input type="range" id="rate" min="0.1" max="10" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="pitch">Pitch: <span id="label-p">1</span></label>
+    <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="voices">Voice:</label>
+    <select id="voices"></select>
+  </div>
+  <button id="start">Start</button>
+  <button id="resume">Resume</button>
+  <button id="pause">Pause</button>
+  <button id="cancel">Cancel</button>
+
+  <script src="popup.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page Summarizer and Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Summary</h1>
+    </header>
+    <main>
+      <textarea id="summary" readonly placeholder="Summary will appear here..."></textarea>
+      <div class="controls">
+        <button id="regenerate" class="button primary">Regenerate Summary</button>
+        <label for="summaryFormat" class="label">Format:</label>
+        <select id="summaryFormat" class="select">
+          <option value="paragraph">Paragraph</option>
+          <option value="bullet">Bullet Points</option>
+        </select>
+        <button id="copy" class="button secondary">Copy</button>
+        <button id="speak" class="button secondary">Text to Speech</button>
+      </div>
+      <div class="translation">
+        <label for="translateTo" class="label">Translate to:</label>
+        <select id="translateTo" class="select">
+          <option value="en-GB">English</option>
+          <option value="hi-IN">Hindi</option>
+          <option value="pa-IN">Punjabi</option>
+          <option value="gu-IN">Gujarati</option>
+          <option value="bn-IN">Bengali</option>
+        </select>
+        <button id="translate" class="button secondary">Translate</button>
+      </div>
+      <div class="tts-controls">
+        <label for="volume" class="label">Volume: <span id="label-v">1</span></label>
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+        <label for="rate" class="label">Rate: <span id="label-r">1</span></label>
+        <input type="range" id="rate" min="0.1" max="10" step="0.1" value="1">
+        <label for="pitch" class="label">Pitch: <span id="label-p">1</span></label>
+        <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+        <label for="voices" class="label">Voice:</label>
+        <select id="voices" class="select"></select>
+        <button id="start" class="button secondary">Start</button>
+        <button id="resume" class="button secondary">Resume</button>
+        <button id="pause" class="button secondary">Pause</button>
+        <button id="cancel" class="button secondary">Cancel</button>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
